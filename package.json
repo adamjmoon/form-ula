@@ -1,5 +1,5 @@
 {
-  "name": "form-ula",
+  "name": "@itchcork/form-ula",
   "version": "0.0.0-semantically-released",
   "description": "React components to build dynamic json configured forms with formula fields dependent on other field values",
   "main": "dist/form-ula.cjs.js",
