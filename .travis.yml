@@ -1,0 +1,19 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+    - ~/.cache
+notifications:
+  email: false
+node_js: '8'
+install: npm install
+before_script:
+  - npx cypress verify &
+  - cd stories
+  - npm install
+  - cd ..
+script: npm run validate
+after_success: kcd-scripts travis-after-success
+branches:
+  only: master
